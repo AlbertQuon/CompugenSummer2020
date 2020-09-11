@@ -449,9 +449,9 @@ class Asset:
 
 print("Initializing program")
 start = timer()
-emergeFile = "Copy of Hardware Asset Query Engine.xlsx"
-jdeFile = "Active Assets in JDE.xlsx"
-reportFile = "All EUD Device Report - July 06 (1).xlsx"
+emergeFile = "redacted.xlsx"
+jdeFile = "redacted.xlsx"
+reportFile = "report.xlsx"
 
 print("Opening workbook")
 workbook = load_workbook(filename=reportFile, read_only=True)
@@ -479,7 +479,7 @@ workbook = load_workbook(filename=emergeFile, read_only=True)
 print("Workbook finished loading")
 print(timer() - start)
 print("Scanning sheets")
-compareAndMerge(workbook["Hardware Asset Query Engine"], ("Asset Tag", "Employee Name", "Asset Status"), assets, True)
+compareAndMerge(workbook["redacted"], ("Asset Tag", "Employee Name", "Asset Status"), assets, True)
 print(len(assets))
 print("Workbook closed")
 workbook.close()

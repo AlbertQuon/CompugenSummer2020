@@ -5,7 +5,7 @@ Data scripts completed at Compugen during the summer of 2020 for UOttawa SEG COO
 ## Address Cleaner (Address.py)
   - This program scans through addresses in an excel file and modifies them to be consistent based on rules
   - Uses OOP to structure addresses 
-  - Uses fuzzy logic and Boolean logic in the algorithm to detect specific address sections
+  - Uses fuzzy logic (factors) and Boolean logic in the algorithm to detect specific address sections
   - Modules Used: PySimpleGUI for a simple GUI, openpyxl for excel file I/O, json for saving and loading rules, PyInstaller for exe file
 
 ## Asset Collator (Hardware.py)
